@@ -12,5 +12,5 @@
 ../Core/Src/main.c:491:13:WIFI_Init	8	static
 ../Core/Src/main.c:504:6:CalculateSpeedAngle	40	static
 ../Core/Src/main.c:576:13:MessageProcess	16	static
-../Core/Src/main.c:612:13:MOTOR_Control	8	static
+../Core/Src/main.c:612:13:MOTOR_Control	48	static
 ../Core/Src/main.c:672:6:Error_Handler	4	static,ignoring_inline_asm
