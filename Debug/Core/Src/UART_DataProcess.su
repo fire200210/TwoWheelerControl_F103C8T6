@@ -1,0 +1,9 @@
+../Core/Src/UART_DataProcess.c:27:6:QueueReset	4	static
+../Core/Src/UART_DataProcess.c:33:6:QueuePush	24	static
+../Core/Src/UART_DataProcess.c:43:13:QueuePOP	16	static
+../Core/Src/UART_DataProcess.c:52:18:QueueDataSize	4	static
+../Core/Src/UART_DataProcess.c:61:13:ESP32_DataProcess	24	static
+../Core/Src/UART_DataProcess.c:83:11:QueueFindControlMessage	24	static
+../Core/Src/UART_DataProcess.c:117:6:SendChar	16	static
+../Core/Src/UART_DataProcess.c:122:6:SendStrings	16	static
+../Core/Src/UART_DataProcess.c:131:6:AT_CIPSEND	48	static
