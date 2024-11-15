@@ -619,25 +619,25 @@ static void MOTOR_Control(void)
 
     switch(ControlINFO.Action)
     {
-      case Forward:
-        TIM2->CCR1 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR1], Encoder[MOTOR1]); TIM2->CCR2 = 0;
-        TIM2->CCR3 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR2], Encoder[MOTOR2]); TIM2->CCR4 = 0;
-        break;
-
-      case Backward:
-        TIM2->CCR2 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR1], Encoder[MOTOR1]); TIM2->CCR1 = 0;
-        TIM2->CCR4 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR2], Encoder[MOTOR2]); TIM2->CCR3 = 0;
-        break;
-
-      case Clockwise:
-        TIM2->CCR1 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR1], Encoder[MOTOR1]); TIM2->CCR2 = 0;
-        TIM2->CCR4 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR2], Encoder[MOTOR2]); TIM2->CCR3 = 0;
-        break;
-
-      case Anticlockwise:
-        TIM2->CCR2 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR1], Encoder[MOTOR1]); TIM2->CCR1 = 0;
-        TIM2->CCR3 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR2], Encoder[MOTOR2]); TIM2->CCR4 = 0;
-        break;
+//      case Forward:
+//        TIM2->CCR1 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR1], Encoder[MOTOR1]); TIM2->CCR2 = 0;
+//        TIM2->CCR3 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR2], Encoder[MOTOR2]); TIM2->CCR4 = 0;
+//        break;
+//
+//      case Backward:
+//        TIM2->CCR2 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR1], Encoder[MOTOR1]); TIM2->CCR1 = 0;
+//        TIM2->CCR4 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR2], Encoder[MOTOR2]); TIM2->CCR3 = 0;
+//        break;
+//
+//      case Clockwise:
+//        TIM2->CCR1 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR1], Encoder[MOTOR1]); TIM2->CCR2 = 0;
+//        TIM2->CCR4 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR2], Encoder[MOTOR2]); TIM2->CCR3 = 0;
+//        break;
+//
+//      case Anticlockwise:
+//        TIM2->CCR2 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR1], Encoder[MOTOR1]); TIM2->CCR1 = 0;
+//        TIM2->CCR3 = (uint32_t)PID_Compute(&MOTOR_PID[MOTOR2], Encoder[MOTOR2]); TIM2->CCR4 = 0;
+//        break;
 
       default: break;
     }

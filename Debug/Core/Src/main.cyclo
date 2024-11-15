@@ -12,5 +12,5 @@ main.c:483:10:Gettime	2
 main.c:491:13:WIFI_Init	1
 main.c:504:6:CalculateSpeedAngle	21
 main.c:576:13:MessageProcess	12
-main.c:612:13:MOTOR_Control	10
+main.c:612:13:MOTOR_Control	6
 main.c:672:6:Error_Handler	1
